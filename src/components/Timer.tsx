@@ -44,7 +44,7 @@ const Timer = ({ interval, type, timesUp }: TimerProps) => {
   const displayTime = millisecondsToDisplayTime(timeRemaining);
 
   useEffect(() => {
-    const intervalId = setInterval(updateRemainingTime, 100);
+    const intervalId = setInterval(updateRemainingTime, 1000);
     intervalRef.current = intervalId;
 
     return () => {
@@ -70,7 +70,7 @@ const Timer = ({ interval, type, timesUp }: TimerProps) => {
   }
 
   function handleStartTimer() {
-    const intervalId = setInterval(updateRemainingTime, 100);
+    const intervalId = setInterval(updateRemainingTime, 1000);
     intervalRef.current = intervalId;
     setIsTimerRunnig(true);
   }

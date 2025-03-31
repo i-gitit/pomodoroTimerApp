@@ -7,11 +7,12 @@ import {
   CardFooter,
 } from "./ui/card";
 import { Button } from "./ui/button";
+
 const PomodoroMethodInfoCard = () => {
   return (
-    <Card className="mx-30 my-10">
+    <Card>
       <CardHeader>
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        <h1 className="text-base sm:text-3xl md:text-4xl lg:text-5xl font-extrabold ">
           The Pomodoro Technique
         </h1>
         <CardDescription>Francesco Cirillo, 1980s</CardDescription>
